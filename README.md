@@ -56,7 +56,7 @@ This repositorie contains linux personal instructions and tools with:
 
 1. [TexLive], install with
 
-` sudo apt-get install texlive texlive-bibtex-extra texlive-pictures texlive-lang-portuguese`
+` sudo apt-get install texlive texlive-bibtex-extra texlive-latex-extra texlive-lang-portuguese`
 
 # Configure
 
