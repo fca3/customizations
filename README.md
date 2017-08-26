@@ -56,18 +56,28 @@ This repositorie contains linux personal instructions and tools with:
 
 1. [TexLive], install with
 
-` sudo apt-get install texlive texlive-bibtex-extra texlive-latex-extra texlive-lang-portuguese`
+   `sudo apt-get install texlive texlive-bibtex-extra texlive-latex-extra texlive-lang-portuguese`
 
 # Configure
 
-1. [bash_profile] 
+1. bash
 
-2. [Vim] place the provided `.vimrc` at your home dir.
+   Copy bash_profile to /etc (eg.):
+   
+   `sudo cp ~/repos/personalized-linux.git/scripts/bash_profile /etc/`
+   
+   Add call to bash_profile at the /etc/bash.bashrc:
+   
+   `printf "\n\n#Added by [Amorim]\nsource /etc/bash_profile\n" | sudo tee -a /etc/bash.bashrc`
+
+2. [Vim] 
+
+   Place the provided `.vimrc` at your home dir.
 
 ## Config files
 
 **DOT_tmux.conf**................TMUX customized .tmux.conf</br>
-**DOT_vimrc**....................VIM customized .vimrc</br>
+**DOT_vimrc**....................VIM customized .vimrc with Vundle support and selected plugins</br>
 **bash_profile**.................customizations for bash usage;</br>
 
 
@@ -90,8 +100,6 @@ This repositorie contains linux personal instructions and tools with:
 
 # TODO
 
-* [ ] describe where to put the `.bash_profile` file and what to change in the bashrc
-* [ ] load the `.vimrc` with vundle plugins  
 * [ ] add database installs
 
 [Vundle]:http://github.com/VundleVim/Vundle.vim
