@@ -1,40 +1,77 @@
-# Linux Setup and Tools
+# Personal Linux
 
-# Install 
+# Table of Contents
+- [About](#about)
+- [Installs](#installs)
+   - [Essentials](#essentials)
+   - [Programming tools](#programming-tools)
+   - [LaTeX](#latex)
+- [Configure](#configure)
+   - [Config files](#config-files)
+- [Scripts](#scripts)
+- [TODO](#todo)
+
+# About
+
+This repositorie contains linux personal instructions and tools with:
+
+1. Selected tools and fast instruction to install them;
+1. Instructions on how to configure a new PC;
+1. Config files (DOT files);
+1. Script tools;
+
+# Installs
 ## Essentials 
 
 1.  [Git]
 
-    Install with `sudo apt-get install git-all`
+    `sudo apt-get install git-all`
 
-2.  [Vundle]
-    
-    Install with `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+1.  [Vundle]
+
+    `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 
     Nice source of Vim plugins at [vimawesome.com](https://vimawesome.com/).
+    
+1.  [Curl]
+
+    `sudo apt-get install curl`
+    
 
 ## Programming tools
 
+1.  [Meteor]
 
+    `curl https://install.meteor.com/ | sh` 
+    
+1.  [Atom]
 
+    [Download the .deb](https://atom.io/download/deb), and then:
 
+    ```bash
+    sudo dpkg -i atom-amd64.deb
+    sudo apt-get -f install
+    ```
 ## LaTeX 
 
 1. [TexLive], install with
 
 ` sudo apt-get install texlive texlive-bibtex-extra texlive-pictures texlive-lang-portuguese`
 
-# Configure your environment 
+# Configure
 
 1. [bash_profile] 
 
 2. [Vim] place the provided `.vimrc` at your home dir.
 
-## Scripts and config DOT files
+## Config files
 
 **DOT_tmux.conf**................TMUX customized .tmux.conf</br>
 **DOT_vimrc**....................VIM customized .vimrc</br>
 **bash_profile**.................customizations for bash usage;</br>
+
+
+# Scripts
 **sh_git_largestobj**............find the largest files in a repository;</br>
 **sh_git_listuntrackednodir**....show only untracked files in a repository;</br>
 **sh_gitshrink**.................remove some files from a repository;</br>
@@ -51,7 +88,16 @@
 **sh_uniqfile**..................creates a unique filename for a given path.</br>
 **sh_utf2iso**...................converts a UTF-8 encoded file into a ISO8859-1 file.</br>
 
+# TODO
+
+* [ ] describe where to put the `.bash_profile` file and what to change in the bashrc
+* [ ] load the `.vimrc` with vundle plugins  
+* [ ] add database installs
+
 [Vundle]:http://github.com/VundleVim/Vundle.vim
 [Vim]:http://www.vim.org
 [Git]:http://git-scm.com
 [TexLive]:https://www.tug.org/texlive/
+[Curl]:https://curl.haxx.se/
+[Meteor]:https://www.meteor.com/
+[Atom]:https://atom.io/
