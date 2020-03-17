@@ -66,7 +66,7 @@ This repositorie contains linux personal instructions and tools with:
 
    Copy bash_profile to /etc (eg.):
    
-   `sudo cp ~/repos/personalized-linux.git/scripts/bash_profile /etc/`
+   `sudo cp ~/repos/personalized-linux/bash_profile /etc/`
    
    Add call to bash_profile at the /etc/bash.bashrc:
    
